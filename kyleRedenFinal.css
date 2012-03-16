@@ -1,0 +1,39 @@
+body {
+	margin: auto;
+	width: 70%;
+	background: #000000;
+}
+a:hover{
+	cursor: pointer;
+}
+li{
+	display: inline-block;
+}
+#content{
+	margin: auto;
+	width: 70%;
+	height: 1000px;
+}
+.imgGal{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+#galleryPic{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aboutPic{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.accordStyle{
+	display: block;
+	height: 100px;
+}

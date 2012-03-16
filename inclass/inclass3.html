@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>In Class 3</title>
+  <meta name="description" content="" />
+  <meta name="author" content="kyle.reden" />
+  <style type="default.css"></style>
+</head>
+
+<body>
+    <header id ="head">
+    </header>
+    <div id="content">
+    	<form>
+    		<input id="password" type="password" />
+    		<input id="checkIt" type="submit" />
+    	</form>
+    	<h1 id="result"></h1>
+    </div>
+  <script type ="text/javascript">
+  var password = 'ilovepotatoes';
+  	document.getElementById('checkIt').onclick = 
+  	function()
+  	{
+ 	if(document.getElementById('password').value === password)
+ 	{
+ 		result = "ammm potatoes!";
+ 	} 
+ 	else 
+ 	{
+ 		result = "FAIL!!!! DEATH TO YOU!";
+ 	}
+ document.getElementById('result').appendChild(document.createTextNode(result));
+ //document.getElementById('result').firstChild.nodeValue = result;
+ return false;
+ }
+  </script>
+</body>
+</html>

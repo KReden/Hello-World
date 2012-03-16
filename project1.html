@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Kyle Reden: Project 1</title>
+		<link rel="stylesheet" href="project1.css" type="text/css"> 
+		<script src="project1.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<header>
+				<h1>SuperFlick Job Submitter</h1>
+			</header>
+			<div id="formHeaderDiv">
+    			 <div id="titleText">
+    			 	Please Enter First and Last Name
+     			</div>
+     			
+			</div>
+			<div style="clear:both;"></div>
+			<div id="formContentDiv" >
+     			<div id="nameContent" style="display: block;">
+     				<form id="nameForm" onSubmit="return validateForm();" method="post" >
+    			 		First Name: <input type="text" name="firstname" onblur="return validateForm()" />
+    			 		Last Name: <input type="text" name="lastname" onblur="return validateForm()" />
+    				</form>
+    			</div>
+			</div>
+			
+			<br/>
+			<br/>
+			
+			<div id="formHeaderDiv">
+    			 <div id="titleText">
+    			 	Please Enter Company Name
+     			</div>
+     			<a id="companyHeader" href="javascript:collapseContent('companyContent','companyHeader');" >
+     				Hide
+     			</a>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="formContentDiv">
+     			<div id="companyContent" style="display: block;">
+     				<form id="companyForm" onSubmit="return validateForm();" method="post">
+    			 		Company Name: <input type="text" name="company" onblur="validateForm()" />
+                        
+    				</form>
+    			</div>
+			</div>
+			
+			<br />
+			<br />
+			
+			<div id="formHeaderDiv">
+    			 <div id="titleText">
+    			 	Please Enter Email Address
+     			</div>
+     			<a id="emailHeader" href="javascript:collapseContent('emailContent','emailHeader');" >
+     				Hide
+     			</a>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="formContentDiv">
+     			<div id="emailContent" style="display: block;">
+     				<form id="emailForm" onSubmit="return validateForm();" method="post">
+    			 		Email: <input type="text" name="email" onblur="validateForm()" />
+                        
+    				</form>
+    			</div>
+			</div>
+            
+            <br />
+            <br />
+            
+            <div id="formHeaderDiv">
+    			 <div id="titleText">
+    			 	Please Enter the name of this Job
+     			</div>
+     			<a id="jobHeader" href="javascript:collapseContent('jobContent','jobHeader');" >
+     				Hide
+     			</a>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="formContentDiv">
+     			<div id="jobContent" style="display: block;">
+     				<form id="jobNameForm" onSubmit="return validateForm();" method="post">
+    			 		Job Name: <input type="text" name="jobName" onblur="validateForm()" />
+                        
+    				</form>
+    			</div>
+			</div>
+            
+            <br />
+            <br />
+            
+            
+			<div style="clear:both;"></div>
+			<div id="formContentDiv">
+     			<div id="jobContent" style="display: block;">
+     				<form method="link" action="superflick.html" onSubmit="return validateForm();" method="post">
+                        <input type="submit" value="Go To Superflick!"/>
+    				</form>
+    			</div>
+			</div>
+		</div>
+        
+	</body>
+</html>

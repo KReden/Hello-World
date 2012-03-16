@@ -1,0 +1,66 @@
+html
+{
+	font-family: Helvetica;
+}
+body
+{
+	background-color: #05093A;
+}
+a
+{
+	text-decoration: none;
+	color: #6F6413;
+}
+header h1
+{
+	color: #3C4296;
+}
+div#content
+{
+	color: #3C4296;
+	width: 80%;
+	margin:auto;
+}
+#formHeaderDiv, #formContentDiv 
+{
+	float: left;
+	width: 510px;
+}
+#titleText 
+{
+	float: left;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 5px;
+}
+#nameHeader, #companyHeader, #emailHeader,
+#jobHeader, #descriptHeader
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 5px;
+}
+#formHeaderDiv 
+{
+	background-color: #03372A;
+	color: #9EB6FF;
+}
+#formContentDiv 
+{
+	background-color: #03372A;
+}
+#nameContent, #companyContent, #emailContent,
+#jobContent, #descriptContent 
+{
+	margin: 5px 10px;
+}
+#formHeaderDiv a 
+{
+	float: right;
+	margin: 10px 10px 5px 5px;
+	color: #E7F4FF;
+}
+#formHeaderDiv a:hover 
+{
+	color: #FFFFFF;
+}
